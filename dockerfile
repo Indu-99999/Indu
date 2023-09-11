@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:latest
 RUN yum install java-11-openjdk devel -y && mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.10/bin/apache-tomcat-10.1.10.tar.gz /opt/tomcat
